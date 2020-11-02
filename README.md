@@ -10,3 +10,6 @@ I ran into a few bugs but I used console log and the dom to figure them out
 I learned var newArray = oldArray.concat(AnotherArray) from the internet (W3 schools)
 
 I used comments to space out and explain what I was doing.
+
+THIS WEBAPP ASSUMES THAT THE USER WANTS LOWERCASE LETTERS IN THEIR PW
+    !!!THE DEFAULT IS LOWERCASE LETTERS!!!
