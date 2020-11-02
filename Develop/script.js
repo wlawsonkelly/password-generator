@@ -17,9 +17,14 @@ var password = ""
 // Write password to the #password input
 function writePassword() {
 //Wipe current password clean
-passwordText.value = ""
+passwordText.innerHTML = ""
+password = "";
 //Prompt/Confirm 
  passwodLength = parseInt(prompt("How long do you want your password to be (INT between 8-128)"));
+ //Making sure password is the right length
+ if (passwodLength > 129 || passwodLength < 8 || passwodLength === undefined) {
+   passwodLength = parseInt(prompt("Password length must between 8-128"));
+ }
  specialCharactersBool = confirm("Do you want special characters?");
  numbersBool = confirm("Do you want numbers");
  upercaseBool = confirm("Do you want to use uppercase letters?");
